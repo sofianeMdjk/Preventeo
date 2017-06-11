@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="546.0" prefWidth="848.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pfeproject.RDFManagerController">
+   <children>
+      <JFXTextField fx:id="baseURI" labelFloat="true" layoutX="137.0" layoutY="60.0" maxWidth="584.0" minWidth="433.0" prefHeight="32.0" prefWidth="584.0" promptText="RDF Base URI :" unFocusColor="#4d4d4d00">
+         <font>
+            <Font name="System Bold Italic" size="13.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextArea fx:id="query" layoutX="137.0" layoutY="147.0" maxWidth="584.0" minWidth="584.0" prefWidth="584.0" />
+      <Label layoutX="159.0" layoutY="115.0" text="Insert the SPARQL Query" textFill="#4059a9">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="keywordsField" layoutX="137.0" layoutY="362.0" maxWidth="446.0" minWidth="409.0" prefHeight="32.0" prefWidth="409.0" promptText="Insert the key words separated with - :" unFocusColor="#4d4d4d0b" />
+      <JFXButton fx:id="keyWordsButton" layoutX="585.0" layoutY="365.0" onAction="#handleButtonsAction" prefHeight="26.0" prefWidth="136.0" style="-fx-background-color: #4059a9;" text="keywords file" textFill="WHITE" />
+      <JFXTextField fx:id="logicalExp" labelFloat="true" layoutX="137.0" layoutY="412.0" maxWidth="584.0" minWidth="584.0" prefHeight="32.0" prefWidth="584.0" promptText="Logical expression">
+         <font>
+            <Font name="System Bold Italic" size="13.0" />
+         </font>
+      </JFXTextField>
+      <JFXButton fx:id="begin" layoutX="368.0" layoutY="480.0" style="-fx-background-color: #4059a9;" text="Start enhancing" textFill="WHITE" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXRadioButton?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="550.0" prefWidth="850.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pfeproject.QueryCenterController">
+   <children>
+      <Label layoutX="328.0" layoutY="44.0" text="Make your own query" textAlignment="CENTER" textFill="#4059a9">
+         <font>
+            <Font name="System Bold Italic" size="16.0" />
+         </font>
+      </Label>
+      <JFXTextArea fx:id="queryArea" layoutX="20.0" layoutY="149.0" maxWidth="749.0" minWidth="412.0" prefHeight="324.0" prefWidth="688.0" AnchorPane.leftAnchor="81.0" AnchorPane.rightAnchor="81.0" />
+      <JFXRadioButton fx:id="queryRadio" layoutX="248.0" layoutY="102.0" onAction="#handleRadioAction" text="Query" />
+      <JFXRadioButton fx:id="updateRadio" layoutX="523.0" layoutY="102.0" onAction="#handleRadioAction" text="Update" />
+      <JFXButton fx:id="queryButton" layoutX="365.0" layoutY="482.0" onAction="#handleButtonAction" prefHeight="34.0" prefWidth="120.0" style="-fx-background-color: #4059a9;" text="Make query" textFill="WHITE" />
+   </children>
+</AnchorPane>

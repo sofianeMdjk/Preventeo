@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="536.0" prefWidth="716.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pfeproject.RecipeDetailController">
+   <children>
+      <TabPane prefHeight="536.0" prefWidth="716.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab text="Recipe details">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <AnchorPane fx:id="detailPane" prefHeight="503.0" prefWidth="716.0">
+                           <children>
+                              <Label fx:id="recipeName1" layoutX="75.0" layoutY="23.0" prefHeight="41.0" prefWidth="568.0" textFill="#4059a9">
+                                 <font>
+                                    <Font name="Purisa Bold Oblique" size="21.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="85.0" layoutY="87.0" text="This recipe is made of :" textFill="#4059a9">
+                                 <font>
+                                    <Font name="Purisa Bold Oblique" size="13.0" />
+                                 </font>
+                              </Label>
+                              <JFXButton fx:id="okayButton1" layoutX="302.0" layoutY="435.0" onAction="#handleButtonsAction" prefHeight="26.0" prefWidth="112.0" style="-fx-background-color: #4059a9;" text="Okay" textFill="WHITE" />
+                              <TableView fx:id="table" layoutX="83.0" layoutY="113.0" prefHeight="298.0" prefWidth="551.0" />
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+          <Tab text="Graph drawer">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <AnchorPane fx:id="graphPane" layoutX="-1.0" prefHeight="501.0" prefWidth="716.0">
+                           <children>
+                              <JFXButton fx:id="nextButton" layoutX="514.0" layoutY="443.0" onAction="#handleButtonsAction" prefHeight="26.0" prefWidth="100.0" style="-fx-background-color: #4059a9;" text="Next" textFill="WHITE" />
+                              <JFXButton fx:id="previousButton" layoutX="82.0" layoutY="443.0" onAction="#handleButtonsAction" prefHeight="26.0" prefWidth="100.0" style="-fx-background-color: #4059a9;" text="Previous" textFill="WHITE" />
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</AnchorPane>

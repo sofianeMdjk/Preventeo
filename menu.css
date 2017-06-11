@@ -1,0 +1,23 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Mar 31, 2017, 4:22:52 PM
+    Author     : sofiane
+*/
+
+.menu-bar{
+  -fx-background-radius: 1;
+}
+
+
+.menu:hover .menu-item:hover {
+    -fx-background-color: #4059a9;
+}
+
+.menu-item .label :hover{
+     -fx-background-color: #4059a9;
+      -fx-label-line-length: 8;
+}

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXListView?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="563.0" prefWidth="829.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pfeproject.DiseaseDetailController">
+   <children>
+      <TabPane layoutY="-5.0" prefHeight="570.0" prefWidth="829.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab text="Disease details">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <AnchorPane fx:id="detailsPane" prefHeight="537.0" prefWidth="829.0">
+                           <children>
+                              <Label fx:id="diseaseName1" alignment="CENTER" layoutX="167.0" layoutY="14.0" prefHeight="37.0" prefWidth="496.0" textAlignment="CENTER" textFill="#4059a9" wrapText="true">
+                                 <font>
+                                    <Font name="Purisa Bold Oblique" size="18.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="14.0" layoutY="59.0" text="This disease is provoked by these ingredients" textFill="#4059a9">
+                                 <font>
+                                    <Font name="System Bold Italic" size="14.0" />
+                                 </font>
+                              </Label>
+                              <AnchorPane fx:id="pane11" layoutX="14.0" layoutY="86.0" prefHeight="341.0" prefWidth="400.0" />
+                              <Label layoutX="426.0" layoutY="59.0" text="Foods that can harm you if you have this disease" textFill="#4059a9">
+                                 <font>
+                                    <Font name="System Bold Italic" size="14.0" />
+                                 </font>
+                              </Label>
+                              <JFXListView fx:id="list1" layoutX="426.0" layoutY="86.0" prefHeight="341.0" prefWidth="389.0" />
+                              <JFXButton fx:id="confirmButton1" layoutX="492.0" layoutY="448.0" onAction="#handleButtonAction" prefHeight="30.0" prefWidth="76.0" />
+                              <JFXButton fx:id="modifyButton1" layoutX="662.0" layoutY="448.0" onAction="#handleButtonAction" prefHeight="30.0" prefWidth="76.0" />
+                              <JFXButton fx:id="okayButton1" layoutX="353.0" layoutY="491.0" onAction="#handleButtonAction" prefHeight="26.0" prefWidth="123.0" style="-fx-background-color: #4059a9;" text="Okay" textFill="WHITE">
+                                 <font>
+                                    <Font name="System Bold Italic" size="13.0" />
+                                 </font>
+                              </JFXButton>
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+          <Tab text="Graph drawer">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Pane fx:id="graphPane" layoutX="9.0" layoutY="6.0" maxHeight="430.0" maxWidth="807.0" minHeight="430.0" minWidth="807.0" prefHeight="430.0" prefWidth="807.0" />
+                        <JFXButton fx:id="previousButton" layoutX="171.0" layoutY="481.0" onAction="#handleButtonAction" prefHeight="26.0" prefWidth="100.0" style="-fx-background-color: #4059a9;" text="Previous" textFill="WHITE" />
+                        <JFXButton fx:id="nextButton" layoutX="541.0" layoutY="481.0" onAction="#handleButtonAction" prefHeight="26.0" prefWidth="100.0" style="-fx-background-color: #4059a9;" text="Next" textFill="WHITE" />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</AnchorPane>

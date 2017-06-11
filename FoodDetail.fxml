@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="pane1" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="535.0" prefWidth="791.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pfeproject.FoodDetailController">
+   <children>
+      <TabPane layoutY="-1.0" prefHeight="535.0" prefWidth="791.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab text="Details">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <AnchorPane fx:id="detailPane" layoutY="-1.0" prefHeight="500.0" prefWidth="791.0">
+                           <children>
+                              <Label fx:id="foodName" layoutX="159.0" layoutY="30.0" prefHeight="37.0" prefWidth="496.0" textAlignment="CENTER" textFill="#4059a9" wrapText="true">
+                                 <font>
+                                    <Font name="Purisa Bold Oblique" size="18.0" />
+                                 </font>
+                              </Label>
+                              <JFXButton fx:id="okayButton" layoutX="623.0" layoutY="445.0" onAction="#handleButton" prefHeight="26.0" prefWidth="96.0" style="-fx-background-color: #4059a9;" text="Okay" textFill="WHITE">
+                                 <font>
+                                    <Font name="System Bold Italic" size="13.0" />
+                                 </font>
+                              </JFXButton>
+                              <ImageView fx:id="originImage" fitHeight="172.0" fitWidth="200.0" layoutX="569.0" layoutY="134.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@pics/other.png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </AnchorPane>
+                        <Text fill="#4059a9" layoutX="575.0" layoutY="96.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Food Origin" textAlignment="CENTER" wrappingWidth="147.501953125">
+                           <font>
+                              <Font name="System Bold Italic" size="19.0" />
+                           </font>
+                        </Text>
+                        <JFXComboBox fx:id="choiceBox" layoutX="50.0" layoutY="96.0" prefHeight="26.0" prefWidth="415.0" promptText="Ingredients of this food " visibleRowCount="5" />
+                        <JFXComboBox fx:id="diseasesBox" layoutX="50.0" layoutY="412.0" prefHeight="26.0" prefWidth="415.0" promptText="Diseases that this food may cause" />
+                        <JFXTextArea fx:id="text" editable="false" focusColor="#405aa800" layoutX="50.0" layoutY="157.0" maxWidth="415.0" minWidth="415.0" prefHeight="234.0" prefWidth="415.0" unFocusColor="#4d4d4d00">
+                           <font>
+                              <Font name="System Bold Italic" size="14.0" />
+                           </font>
+                        </JFXTextArea>
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+          <Tab text="Graph drawer">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <AnchorPane fx:id="graphPane" prefHeight="504.0" prefWidth="791.0">
+                           <children>
+                              <JFXButton fx:id="previousButton" layoutX="125.0" layoutY="456.0" onAction="#handleButton" prefHeight="26.0" prefWidth="100.0" style="-fx-background-color: #4059a9;" text="Previous" textFill="WHITE" />
+                              <JFXButton fx:id="nextButton" layoutX="571.0" layoutY="456.0" onAction="#handleButton" prefHeight="26.0" prefWidth="100.0" style="-fx-background-color: #4059a9;" text="Next" textFill="WHITE" />
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</AnchorPane>

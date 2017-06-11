@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="pane" prefHeight="600.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pfeproject.AdminUIController">
+   <children>
+      <MenuBar prefHeight="29.0" prefWidth="1200.0">
+        <menus>
+            <Menu mnemonicParsing="false" text="Admin">
+              <items>
+                  <MenuItem fx:id="exit" mnemonicParsing="false" onAction="#itemsAction" text="Exit" />
+              </items>
+            </Menu>
+          <Menu mnemonicParsing="false" text="Food">
+            <items>
+              <MenuItem fx:id="addFood" mnemonicParsing="false" onAction="#itemsAction" text="Add a food" />
+                  <MenuItem fx:id="viewFood" mnemonicParsing="false" onAction="#itemsAction" text="View All Foods" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Disease">
+            <items>
+              <MenuItem fx:id="addDisease" mnemonicParsing="false" onAction="#itemsAction" text="Add Disease" />
+                  <MenuItem fx:id="viewDisease" mnemonicParsing="false" onAction="#itemsAction" text="View Diseases" />
+            </items>
+          </Menu>
+            <Menu mnemonicParsing="false" text="Recipe">
+              <items>
+                <MenuItem fx:id="addRecipe" mnemonicParsing="false" onAction="#itemsAction" text="Add Reipe" />
+                  <MenuItem fx:id="recipe" mnemonicParsing="false" onAction="#itemsAction" text="Show recipe" />
+              </items>
+            </Menu>
+        </menus>
+      </MenuBar>
+      <ImageView fx:id="notifButton" fitHeight="51.0" fitWidth="55.0" layoutX="1131.0" layoutY="41.0" onMouseClicked="#handleClick" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="logout" fitHeight="92.0" fitWidth="109.0" layoutX="14.0" layoutY="41.0" onMouseClicked="#handleClick" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="logo" fitHeight="424.0" fitWidth="587.0" layoutX="463.0" layoutY="98.0" pickOnBounds="true" preserveRatio="true" />
+      <Label fx:id="numberOfNotifs" layoutX="1143.0" layoutY="92.0" prefHeight="29.0" prefWidth="31.0" textFill="#f80000">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

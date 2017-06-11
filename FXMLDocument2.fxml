@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="345.0" prefWidth="223.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pfeproject.DFields">
+   <children>
+      <ScrollPane fx:id="MyBox" prefHeight="340.0" prefWidth="400.0">
+         <content>
+            <AnchorPane fx:id="MyPane" prefHeight="322.0" prefWidth="399.0" />
+         </content>
+      </ScrollPane>
+   </children>
+</AnchorPane>

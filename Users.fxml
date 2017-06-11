@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="pane" prefHeight="600.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pfeproject.UsersController">
+   <children>
+      <Hyperlink fx:id="showFood" layoutX="27.0" layoutY="14.0" onAction="#handleClick" text="Show Food" textFill="#4059a9">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font>
+      </Hyperlink>
+      <Hyperlink fx:id="addFood" layoutX="172.0" layoutY="14.0" onAction="#handleClick" text="Add Food" textFill="#4059a9">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font>
+      </Hyperlink>
+      <Hyperlink fx:id="showDisease" layoutX="299.0" layoutY="14.0" onAction="#handleClick" text="Show diseases" textFill="#4059a9">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font>
+      </Hyperlink>
+      <Hyperlink fx:id="addDisease" layoutX="475.0" layoutY="14.0" onAction="#handleClick" text="Add disease" textFill="#4059a9">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font>
+      </Hyperlink>
+      <Hyperlink fx:id="help" layoutX="1106.0" layoutY="14.0" onAction="#handleClick" text="Help" textFill="#4059a9">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font>
+      </Hyperlink>
+      <Hyperlink fx:id="admin" layoutX="910.0" layoutY="14.0" onAction="#handleClick" text="Connect as admin" textFill="#4059a9">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font>
+      </Hyperlink>
+      <Hyperlink fx:id="recipe" layoutX="623.0" layoutY="14.0" onAction="#handleClick" text="Show recipes" textFill="#4059a9">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font>
+      </Hyperlink>
+      <Hyperlink fx:id="addRecipe" layoutX="780.0" layoutY="14.0" onAction="#handleClick" text="Add recipe" textFill="#4059a9">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font>
+      </Hyperlink>
+      <ImageView fx:id="logo" fitHeight="424.0" fitWidth="587.0" layoutX="453.0" layoutY="88.0" pickOnBounds="true" preserveRatio="true" />
+   </children>
+</AnchorPane>
